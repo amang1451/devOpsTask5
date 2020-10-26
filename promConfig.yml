@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: promConfig
+  name: prom-config
   labels:
     app: prometheus
 data:
@@ -13,6 +13,6 @@ data:
       - job_name: 'prometheus_local'
         static_configs:
         - targets: ['0.0.0.0:9090']
-      - job_name: 'RHEL’
+      - job_name: 'RHEL'
         static_configs:
-        - targets: [‘192.168.99.101:9100’]
+        - targets: ['192.168.99.101:9100']

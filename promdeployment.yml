@@ -18,10 +18,10 @@ spec:
       volumes:
         - name: prometheus-data-store
           persistentVolumeClaim:
-            claimName: promPVC
+            claimName: prom-pvc
         - name: prometheus-configmap
           configMap:
-            name: promConfig
+            name: prom-config
       containers:
       - name:  prometheus
         image:  prom/prometheus

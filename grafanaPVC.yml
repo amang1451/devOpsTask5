@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name:  grafanaPVC
+  name:  grafana-pvc
   labels:
     vol: grafana-pvc
 spec:
